@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+  font-family:Sans-serif;
+  line-height: 1.5em;
+}
+
+#main {
+  position: fixed;
+  top: 77px; /* Set this to the height of the header */
+  bottom: 50px; /* Set this to the height of the footer */
+  left: 200px;
+  right: 300px;
+  overflow: auto;
+  background: lightgrey;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+} /*usha natang ni*/
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+  overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
+  background: white; /*#BCCE98*/
+  margin-top: 0;
+}
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+  background: white; /*#BCCE98*/
+  font-size: 12px;
+}
+
+#left {
+  position: absolute;
+  top: 77px; /* Set this to the height of the header */
+  bottom: 50px; /* Set this to the height of the footer */
+  left: 0;
+  width: 200px;
+  overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling.
+  To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+  background: orange; /*#DAE9BC*/
+}
+
+#right {
+  position: absolute;
+  top: 77px; /* Set this to the height of the header */
+  bottom: 50px; /* Set this to the height of the footer */
+  right: 0;
+  width: 300px;
+  overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling.
+  To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+  background: #0073D1; /*dimgrey*/
+}
+
+.innertube {
+  margin: 15px; /* Provides padding for the content */
+}
+
+
+p {
+  color: #555;
+}
+
+/*IE6 fix*/
+* html body{
+  padding: 50px 200px 50px 200px; /* Set the first value to the height of the header,
+  the second value to the width of the right column, third value to the height of the footer,
+  and last value to the width of the left column */
+}
+
+* html main{
+  height: 100%;
+  width: 100%;
+}
+
+.button{
+    background-color: #0073D1;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    width: 170px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    /*padding: 7px 7px 7px 20px; /*value last sekali tu jarak text dri image*/
+    padding: 8.5px 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.buttondelete {
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 8.5px 12px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    top: 30%;
+    margin: 7px;
+}
+
+.buttonundo{
+    background-color: #0073D1;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 8.5px 12px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    top: 30%;
+    margin: 7px;
+}
+
+.buttonredo{
+    background-color: #0073D1;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 8.5px 12px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    top: 30%;
+    margin: 7px;
+}
+
+.buttonsave{
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    /*padding: 7px 7px 7px 20px; /*value last sekali tu jarak text dri image*/
+    padding: 8.5px 12px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    top: 30%;
+    margin: 7px;
+}
+
+.code{
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    /*padding: 7px 7px 7px 20px; /*value last sekali tu jarak text dri image*/
+    padding: 8.5px 12px;
+    position: relative;
+    float: right;
+    top: 30%;
+    display: flex;
+}
+
+.dept{
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    /*padding: 7px 7px 7px 20px; /*value last sekali tu jarak text dri image*/
+    padding: 8.5px 12px;
+    position: relative;
+    float: right;
+    top: 30%;
+    display: flex;
+}
+
+.name{
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    /*padding: 7px 7px 7px 20px; /*value last sekali tu jarak text dri image*/
+    padding: 8.5px 12px;
+    position: relative;
+    float: right;
+    top: 30%;
+    display: flex;
+}
+
+.button:hover{
+    background-color: #EF2C62;
+    /*box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
+    color: white;
+}
+
+#textfield{
+  display: none;
+  border: 2px solid #0073D1;
+  border-radius: 8px;
+  resize: none;
+  overflow: auto;
+}
+
+#commentbox{
+  display: none;
+  border: 2px solid #0073D1;
+  border-radius: 8px;
+  resize: both;
+  overflow: auto;
+}
+
+.midhead{
+  background-color: : #0073D1;
+  margin: auto;
+  text-align: center;
+}
